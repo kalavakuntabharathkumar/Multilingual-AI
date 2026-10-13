@@ -1,0 +1,13 @@
+seed: 42
+languages: [Hindi, Telugu, Tamil]
+bootstrap_iterations: 2000
+confidence_level: 0.95
+paths:
+  prompts: data/demo/prompts.csv
+  human_ratings: data/demo/human_ratings.csv
+  judge_scores: data/demo/judge_scores.csv
+  output_dir: outputs
+models:
+  openai: gpt-4o-mini
+  transformers: Qwen/Qwen2.5-1.5B-Instruct
+rubric_versions: [v1, v2]
